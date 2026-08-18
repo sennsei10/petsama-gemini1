@@ -1,130 +1,845 @@
+Note: the links and images in this document may point to external sources. Please review them before opening.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petsama — Home Pet Sitting in Bengaluru | Stay. Play. Be Loved.</title>
-<meta name="description" content="Petsama connects Bengaluru pet parents with verified, background-checked pet sitters who visit your home. No cages, no strangers' houses — just trusted care and daily photo updates.">
+<title>Petsama — Royal Pet Care & Home Sitting in Bengaluru</title>
+<meta name="description" content="Petsama connects Bengaluru pet parents with elite, background-checked pet sitters who visit your home. Luxurious care, zero cages, and daily photo updates.">
+
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta property="og:title" content="Petsama — Stay. Play. Be Loved.">
-<meta property="og:description" content="Verified home pet sitting in Bengaluru. No cages, real photo updates, and sitters who keep the fair share of every booking.">
-<meta property="og:image" content="assets/petsama-banner.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+
+<!-- Elegant editorial & premium modern fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --cream:#FBF1E4;
-    --cream-2:#F5E6D0;
-    --red:#C1272D;
-    --red-dark:#8F1B20;
-    --ink:#1E1710;
-    --ink-soft:#6E5D4C;
-    --gold:#D4A017;
-    --sakura:#F6C9D3;
+  :root {
+    --cream: #FAF6F0;       /* Luxurious, softer warm cream */
+    --cream-dark: #F3ECE3;  /* Sophisticated depth cream */
+    --red: #C1272D;         /* Petsama Brand Red */
+    --red-dark: #7A1418;    /* Crimson depth */
+    --ink: #18130F;         /* Elegant near-black */
+    --ink-soft: #5C4D43;    /* Muted editorial charcoal */
+    --gold: #E5A93C;        /* Rich premium gold */
+    --sakura: #F3C1C6;      /* Playful elegant blush pink */
+    --sage: #D2E8D4;        /* Soft relaxing green */
+    
+    /* Neo-Brutalist Border System */
+    --border-thick: 3px solid var(--ink);
+    --border-thin: 1.5px solid var(--ink);
+    --shadow-premium: 5px 5px 0px var(--ink);
+    --shadow-premium-hover: 8px 8px 0px var(--ink);
+    --shadow-premium-small: 3px 3px 0px var(--ink);
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;}
-  h1,h2,h3,.brand-text{font-family:'Poppins',sans-serif;}
-  a{text-decoration:none;color:inherit;}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
-  img{max-width:100%;display:block;}
 
-  nav{position:sticky;top:0;z-index:50;background:rgba(251,241,228,0.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink);}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;}
-  .brand{display:flex;align-items:center;gap:10px;}
-  .brand img{width:44px;height:44px;object-fit:contain;}
-  .brand-text{font-size:22px;font-weight:800;color:var(--red-dark);}
-  .nav-links{display:flex;gap:30px;font-weight:600;font-size:15px;}
-  .nav-links a:hover{color:var(--red);}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;font-weight:700;
-    padding:13px 26px;border-radius:100px;border:2.5px solid var(--ink);
-    box-shadow:4px 4px 0 var(--ink);
-    transition:transform .15s ease, box-shadow .15s ease;
-    font-family:'Inter',sans-serif;font-size:15px;cursor:pointer;background:var(--red);color:#fff;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
-  .btn:active{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--ink);}
-  .btn.small{padding:9px 18px;font-size:14px;box-shadow:3px 3px 0 var(--ink);}
-  .btn.ghost{background:transparent;color:var(--ink);}
-  .btn.wa{background:#25D366;border-color:var(--ink);color:#fff;}
 
-  .hero{position:relative;padding:70px 0 50px;overflow:hidden;}
-  .hero .blob{position:absolute;border-radius:44% 56% 60% 40% / 50% 45% 55% 50%;}
-  .hero .b1{width:480px;height:480px;background:var(--sakura);opacity:.5;top:-140px;right:-160px;}
-  .hero .b2{width:280px;height:280px;background:var(--gold);opacity:.18;bottom:-80px;left:-80px;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative;z-index:1;}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--gold);border:2px solid var(--ink);border-radius:100px;padding:6px 16px;font-weight:700;font-size:13px;margin-bottom:18px;color:var(--ink);}
-  .hero h1{font-size:52px;line-height:1.08;font-weight:800;margin-bottom:18px;color:var(--red-dark);}
-  .hero p.lead{font-size:18px;color:var(--ink-soft);max-width:460px;margin-bottom:30px;line-height:1.6;}
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
-  .hero-art{text-align:center;position:relative;}
-  .hero-art img{max-width:380px;margin:0 auto;filter:drop-shadow(8px 12px 0 rgba(30,23,16,0.1));}
+  html {
+    scroll-behavior: smooth;
+  }
 
-  .marquee-wrap{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--ink);overflow:hidden;padding:13px 0;}
-  .marquee{display:flex;white-space:nowrap;animation:scroll 24s linear infinite;}
-  .marquee span{color:var(--cream);font-family:'Poppins';font-weight:700;font-size:16px;margin-right:36px;display:flex;align-items:center;gap:10px;}
-  .marquee span svg{width:16px;height:16px;fill:var(--gold);}
-  @keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
 
-  .section{padding:80px 0;}
-  .section-head{text-align:center;max-width:600px;margin:0 auto 50px;}
-  .section-head .eyebrow{background:var(--sakura);}
-  .section-head h2{font-size:34px;font-weight:800;margin-bottom:12px;color:var(--red-dark);}
-  .section-head p{color:var(--ink-soft);font-size:16px;line-height:1.6;}
+  h1, h2, h3, .brand-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+  }
 
-  .trail{position:relative;}
-  .trail-svg{position:absolute;top:56px;left:0;width:100%;height:calc(100% - 56px);z-index:0;}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;z-index:1;}
-  .step{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:30px 22px;text-align:center;box-shadow:6px 6px 0 var(--ink);}
-  .step-num{width:44px;height:44px;border-radius:50%;background:var(--red);border:3px solid var(--ink);color:#fff;font-family:'Poppins';font-weight:800;display:flex;align-items:center;justify-content:center;font-size:19px;margin:0 auto 16px;}
-  .step:nth-child(2) .step-num{background:var(--gold);color:var(--ink);}
-  .step:nth-child(3) .step-num{background:var(--sakura);color:var(--ink);}
-  .step h3{font-size:19px;margin-bottom:8px;}
-  .step p{color:var(--ink-soft);font-size:14.5px;line-height:1.55;}
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
 
-  .features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
-  .feature{background:var(--cream-2);border:3px solid var(--ink);border-radius:18px;padding:24px 20px;transition:transform .15s ease;}
-  .feature:hover{transform:translateY(-4px);}
-  .feature .icon{width:48px;height:48px;border-radius:12px;background:#fff;border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
-  .feature .icon svg{width:26px;height:26px;}
-  .feature h3{font-size:16px;margin-bottom:6px;font-family:'Poppins';font-weight:700;}
-  .feature p{font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
 
-  .gallery-section{background:var(--ink);color:var(--cream);}
-  .gallery-section .section-head p{color:#D8C9B8;}
-  .gallery-section .eyebrow{background:var(--gold);color:var(--ink);}
-  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .gcard{background:#2B2118;border:2px solid #4A3A28;border-radius:20px;padding:20px;text-align:center;}
-  .gcard svg{width:100%;max-width:180px;margin:0 auto 14px;}
-  .gcard p{font-family:'Poppins';font-weight:600;font-size:14.5px;color:var(--sakura);}
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
 
-  .cta-section{background:var(--red);position:relative;overflow:hidden;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);}
-  .cta-section .blob{position:absolute;background:#fff;opacity:.1;border-radius:44% 56% 60% 40% / 50% 45% 55% 50%;}
-  .cta-inner{position:relative;z-index:1;text-align:center;padding:70px 24px;max-width:600px;margin:0 auto;}
-  .cta-inner h2{color:#fff;font-size:34px;margin-bottom:12px;}
-  .cta-inner p{color:#FBDADA;font-size:16px;margin-bottom:30px;}
-  .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-  .cta-btns .btn.ghost{background:#fff;color:var(--red-dark);}
+  /* --- NAVIGATION --- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 246, 240, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: var(--border-thick);
+    transition: all 0.3s ease;
+  }
 
-  footer{padding:44px 0;text-align:center;}
-  footer .brand{justify-content:center;margin-bottom:10px;}
-  footer .brand img{width:36px;height:36px;}
-  footer p{color:var(--ink-soft);font-size:13.5px;margin-top:4px;}
+  nav .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
 
-  @media(max-width:880px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-art{order:-1;}
-    .hero h1{font-size:36px;}
-    .steps{grid-template-columns:1fr;}
-    .features-grid{grid-template-columns:1fr 1fr;}
-    .gallery-grid{grid-template-columns:1fr;}
-    .nav-links{display:none;}
-    .trail-svg{display:none;}
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: var(--border-thin);
+  }
+
+  .brand-text {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--red);
+    letter-spacing: -0.5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    position: relative;
+    padding: 4px 0;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: width 0.2s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    color: var(--red);
+  }
+
+  /* --- PREMIUM BUTTONS --- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 100px;
+    border: var(--border-thick);
+    background: var(--red);
+    color: #fff;
+    box-shadow: var(--shadow-premium);
+    cursor: pointer;
+    transform: translate(0, 0);
+    transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: var(--shadow-premium-hover);
+    background: var(--red-dark);
+  }
+
+  .btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+
+  .btn.small {
+    padding: 10px 20px;
+    font-size: 14px;
+    box-shadow: var(--shadow-premium-small);
+  }
+
+  .btn.small:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+
+  .btn.secondary {
+    background: var(--cream);
+    color: var(--ink);
+  }
+
+  .btn.secondary:hover {
+    background: var(--cream-dark);
+  }
+
+  .btn.wa {
+    background: #25D366;
+    color: #fff;
+  }
+
+  .btn.wa:hover {
+    background: #1ebd52;
+  }
+
+  /* --- HERO SECTION --- */
+  .hero {
+    padding: 80px 0 60px;
+    position: relative;
+    background-image: radial-gradient(var(--cream-dark) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    border: var(--border-thick);
+    border-radius: 100px;
+    padding: 8px 18px;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-premium-small);
+  }
+
+  .hero h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    color: var(--ink);
+  }
+
+  .hero h1 span {
+    color: var(--red);
+    font-style: italic;
+  }
+
+  .hero p.lead {
+    font-size: 19px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 520px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Interactive Live Mockup on Right of Hero */
+  .hero-mockup {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .phone-frame {
+    background: var(--ink);
+    border-radius: 40px;
+    padding: 12px;
+    border: var(--border-thick);
+    box-shadow: var(--shadow-premium-hover);
+    position: relative;
+  }
+
+  .phone-screen {
+    background: #efeae2; /* WhatsApp-like beige background */
+    border-radius: 30px;
+    overflow: hidden;
+    border: var(--border-thin);
+    position: relative;
+  }
+
+  .phone-header {
+    background: var(--red);
+    color: #fff;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border-thin);
+  }
+
+  .phone-header .sitter-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .phone-header .sitter-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 1px solid #fff;
+  }
+
+  .chat-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 380px;
+    overflow-y: auto;
+  }
+
+  .chat-bubble {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 13px;
+    line-height: 1.4;
+    border: var(--border-thin);
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  }
+
+  .chat-bubble.sitter {
+    background: #fff;
+    align-self: flex-start;
+    border-top-left-radius: 2px;
+  }
+
+  .chat-bubble.sitter img {
+    border-radius: 8px;
+    margin-bottom: 6px;
+    border: 1px solid #eee;
+  }
+
+  .chat-bubble.parent {
+    background: #DCF8C6;
+    align-self: flex-end;
+    border-top-right-radius: 2px;
+  }
+
+  .sitter-tag {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--gold);
+    color: var(--ink);
+    font-weight: 800;
+    font-size: 12px;
+    padding: 6px 12px;
+    border: var(--border-thin);
+    border-radius: 8px;
+    transform: rotate(6deg);
+    box-shadow: var(--shadow-premium-small);
+    z-index: 10;
+  }
+
+  /* --- MARQUEE --- */
+  .marquee-wrap {
+    border-top: var(--border-thick);
+    border-bottom: var(--border-thick);
+    background: var(--ink);
+    overflow: hidden;
+    padding: 16px 0;
+  }
+
+  .marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 28s linear infinite;
+  }
+
+  .marquee span {
+    color: var(--cream);
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 19px;
+    margin-right: 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .marquee span svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--gold);
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* --- INTERACTIVE: PET MOODS SECTION --- */
+  .moods-section {
+    padding: 100px 0;
+    background: var(--cream-dark);
+    border-bottom: var(--border-thick);
+  }
+
+  .section-title-wrap {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+
+  .section-title-wrap h2 {
+    font-size: 42px;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  .section-title-wrap p {
+    font-size: 17px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .mood-tab {
+    background: #fff;
+    border: var(--border-thick);
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s ease;
+    box-shadow: var(--shadow-premium-small);
+  }
+
+  .mood-tab.active {
+    background: var(--red);
+    color: #fff;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+
+  .mood-content {
+    background: #fff;
+    border: var(--border-thick);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: var(--shadow-premium-hover);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    min-height: 480px;
+  }
+
+  .mood-visual {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    border: var(--border-thin);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.05);
+    height: 100%;
+    min-height: 380px;
+    max-height: 380px;
+  }
+
+  .mood-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mood-bubble {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(24, 19, 15, 0.85);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mood-details h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--red-dark);
+  }
+
+  .mood-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+
+  .highlight-card {
+    background: var(--cream);
+    border: var(--border-thin);
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .highlight-card svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: var(--red);
+  }
+
+  /* --- HOW IT WORKS (STEPS) --- */
+  .steps-section {
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+
+  .step-card {
+    background: #fff;
+    border: var(--border-thick);
+    border-radius: 24px;
+    padding: 44px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-premium);
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-premium-hover);
+  }
+
+  .step-num {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--sakura);
+    border: var(--border-thick);
+    color: var(--ink);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 24px;
+  }
+
+  .step-card:nth-child(2) .step-num {
+    background: var(--gold);
+  }
+
+  .step-card:nth-child(3) .step-num {
+    background: var(--sage);
+  }
+
+  .step-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+
+  .step-card p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* --- WHY PETSAMA (THE ACADEMY) --- */
+  .why-section {
+    padding: 100px 0;
+    background: var(--cream-dark);
+    border-top: var(--border-thick);
+    border-bottom: var(--border-thick);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .why-card {
+    background: #fff;
+    border: var(--border-thick);
+    border-radius: 20px;
+    padding: 30px 24px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-premium);
+  }
+
+  .why-card .inner-visual {
+    border-radius: 12px;
+    overflow: hidden;
+    border: var(--border-thin);
+    margin-bottom: 20px;
+    height: 180px;
+  }
+
+  .why-card .inner-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .why-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+
+  .why-card p {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* --- TESTIMONIALS (VIBE CHECK) --- */
+  .reviews-section {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  .reviews-section .section-title-wrap h2 {
+    color: #fff;
+  }
+
+  .reviews-section .section-title-wrap p {
+    color: var(--cream-dark);
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .review-card {
+    background: #231B18;
+    border: 2px solid #3D2F28;
+    border-radius: 24px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .review-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    overflow: hidden;
+  }
+
+  .review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .author-info h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .author-info span {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .review-quote {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #ECE3DB;
+    margin-bottom: 16px;
+  }
+
+  /* --- CTA SECTION --- */
+  .cta-section {
+    background: var(--red);
+    color: #fff;
+    padding: 100px 24px;
+    text-align: center;
+    border-bottom: var(--border-thick);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(var(--red-dark) 1.5px, transparent 1.5px);
+    background-size: 20px 24px;
+    opacity: 0.3;
+  }
+
+  .cta-inner {
+    position: relative;
+    z-index: 10;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .cta-inner h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .cta-inner p {
+    font-size: 18px;
+    margin-bottom: 36px;
+    color: #FFD2D4;
+    line-height: 1.6;
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    padding: 60px 0;
+    background: var(--cream);
+    border-top: var(--border-thin);
+    text-align: center;
+  }
+
+  footer .brand {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  /* --- RESPONSIVENESS --- */
+  @media(max-width: 992px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 40px;
+    }
+    .hero h1 {
+      font-size: 44px;
+    }
+    .hero p.lead {
+      margin: 0 auto 30px;
+    }
+    .hero-ctas {
+      justify-content: center;
+    }
+    .hero-mockup {
+      order: -1;
+    }
+    .mood-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .mood-visual {
+      min-height: 280px;
+      max-height: 280px;
+    }
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+    .reviews-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media(max-width: 576px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+    .nav-links {
+      display: none;
+    }
+    .cta-inner h2 {
+      font-size: 36px;
+    }
   }
 </style>
 </head>
@@ -132,193 +847,326 @@
 
 <nav>
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="assets/petsama-logo.png" alt="Petsama logo"><span class="brand-text">Petsama</span></a>
+    <a href="index.html" class="brand">
+      <img src="assets/petsama-logo.png" alt="Petsama logo">
+      <span class="brand-text">Petsama</span>
+    </a>
     <div class="nav-links">
+      <a href="#vibe-check">Vacation Moods</a>
       <a href="#how">How it works</a>
       <a href="#why">Why Petsama</a>
       <a href="pricing.html">Pricing</a>
     </div>
-    <a href="book.html" class="btn small">Book a visit 🐾</a>
+    <a href="book.html" class="btn small">Book a Visit 🐾</a>
   </div>
 </nav>
 
-<div class="wrap" style="padding-top:24px;">
-  <img src="assets/petsama-banner.png" alt="Petsama — Stay. Play. Be Loved." style="width:100%;border-radius:24px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);">
-</div>
-
+<!-- HERO SECTION -->
 <section class="hero">
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">🐾 Now live in Bengaluru</div>
-      <h1>Stay. Play.<br>Be Loved.</h1>
-      <p class="lead">Petsama brings trusted, background-verified pet sitters to your doorstep — your pet stays home, on their routine, with someone who genuinely cares.</p>
+      <div class="eyebrow">🐾 Premium Home Pet Sitting · Bengaluru</div>
+      <h1>Royal Care.<br><span>Zero Boarding drama.</span></h1>
+      <p class="lead">Your pet stays in their own home, rules over their own sofa, and enjoys customized visits from background-verified sitters who spoil them raw.</p>
       <div class="hero-ctas">
-        <a href="book.html" class="btn">Book a visit 🐾</a>
-        <a href="https://wa.me/918429272310" target="_blank" class="btn wa">💬 Chat on WhatsApp</a>
+        <a href="book.html" class="btn">Book Royal Care 🐾</a>
+        <a href="https://wa.me/918429272310" target="_blank" class="btn secondary">💬 WhatsApp Sitter Desk</a>
       </div>
     </div>
-    <div class="hero-art">
-      <img src="assets/petsama-logo.png" alt="Petsama — happy dog and cat mascots">
+    
+    <!-- WhatsApp Mockup -->
+    <div class="hero-mockup">
+      <div class="sitter-tag">🔥 Day 3 Update</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-header">
+            <div class="sitter-profile">
+              <div class="sitter-avatar"></div>
+              <div>
+                <p style="margin:0; font-size:13px; font-weight:800;">Petsama Sitter (HSR)</p>
+                <p style="margin:0; font-size:10px; color:#FFE5E6;">Active now</p>
+              </div>
+            </div>
+            <span>🐾</span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-bubble sitter">
+              <img src="5bd5719eb61a7c4305d56f7eaa9c7054.jpg" alt="Rocky sitting on sofa">
+              <p>Just checked in on Rocky. He forced me to put on his favorite lo-fi beats, wrapped himself in the blanket, and ordered a slice of pizza. Absolute king.</p>
+            </div>
+            <div class="chat-bubble parent">
+              <p>Hahaha! Oh my god, he looks more relaxed than I am at this beach resort. Thank you! 😂❤️</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- MARQUEE BAR -->
 <div class="marquee-wrap">
   <div class="marquee">
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>VERIFIED SITTERS</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>HOME VISITS, NOT CAGES</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>REAL PHOTO UPDATES</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>BENGALURU'S OWN</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>VERIFIED SITTERS</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>HOME VISITS, NOT CAGES</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>REAL PHOTO UPDATES</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>BENGALURU'S OWN</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>VERIFIED BENGALURU SITTERS</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>HOME SITTING, NOT CAGES</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>HILARIOUS PHOTO UPDATES</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>SPOILED ROTTEN ROUTINES</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="4.5" r="2.4"/></svg>VERIFIED BENGALURU SITTERS</span>
   </div>
 </div>
 
-<section class="section trail" id="how">
+<!-- INTERACTIVE VIBE MATCHING SECTION -->
+<section class="moods-section" id="vibe-check">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">How it works</div>
-      <h2>Three steps to a happy pet</h2>
-      <p>No cages, no strangers' houses. Just a trusted sitter who comes to them, on your schedule.</p>
+    <div class="section-title-wrap">
+      <div class="eyebrow" style="background:var(--sakura)">Vacation Vibe Check</div>
+      <h2>How does your pet handle you leaving?</h2>
+      <p>Boarding houses and kennel cages trigger pure panic. Here is how pets behave when you leave them at home with a Petsama verified bestie.</p>
     </div>
-    <svg class="trail-svg" viewBox="0 0 1000 120" preserveAspectRatio="none">
-      <path d="M120 20 Q 330 120 500 20 T 880 20" stroke="#1E1710" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round" fill="none" opacity="0.3"/>
-    </svg>
-    <div class="steps">
-      <div class="step">
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="mood-selector">
+      <div class="mood-tab active" onclick="switchMood('drama')">💅 The Melodrama</div>
+      <div class="mood-tab" onclick="switchMood('fight')">🥊 The 'Wanna Fite'</div>
+      <div class="mood-tab" onclick="switchMood('royal')">👑 The Royal Zen</div>
+    </div>
+
+    <!-- Active Mood Card Display -->
+    <div class="mood-content" id="mood-card">
+      <div class="mood-visual">
+        <img id="mood-img" src="6bf3750e15149ecb2f2d367a92f3a2c6.jpg" alt="Drama cat looking out window">
+        <div class="mood-bubble" id="mood-caption">"Checking my watch every 5 seconds..."</div>
+      </div>
+      <div class="mood-details">
+        <h3 id="mood-title">Dramatic Sighs & Window Stares</h3>
+        <p id="mood-desc">Some pets turn your departure into an indie movie. They stare out the window with existential dread. If boarded in a cold, unfamiliar cage, this anxiety spikes. But in their own home, our sitters distract them with head scratches, specialized treats, and zero disruption to their favorite sun spots.</p>
+        <div class="highlight-card">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          <span id="mood-highlight">How we solve this: Extra comfort check-ins and favorite cozy blanket setups.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-section" id="how">
+  <div class="wrap">
+    <div class="section-title-wrap">
+      <div class="eyebrow" style="background:var(--sage)">Seamless Process</div>
+      <h2>Booking luxury is incredibly simple</h2>
+      <p>We match routines, secure premium background-checked sitters, and keep you connected 24/7.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
         <div class="step-num">1</div>
-        <h3>Tell us about your pet</h3>
-        <p>Breed, routine, quirks — fill our 2-minute form or just message us directly.</p>
+        <h3>Spill the Pet Beans</h3>
+        <p>Tell us their exact routine, quirks, and behavioral eccentricities using our 2-minute booking portal.</p>
       </div>
-      <div class="step">
+      <div class="step-card">
         <div class="step-num">2</div>
-        <h3>We match a verified sitter</h3>
-        <p>Someone background-checked and nearby, confirmed within hours.</p>
+        <h3>The Perfect Match</h3>
+        <p>We secure an elite, background-verified sitter living nearby who matches your pet's energy level perfectly.</p>
       </div>
-      <div class="step">
+      <div class="step-card">
         <div class="step-num">3</div>
-        <h3>Relax, they've got this</h3>
-        <p>Photo and video updates after every visit. Away, not absent.</p>
+        <h3>Sit Back & Smile</h3>
+        <p>Get hilarious daily photo and video logs on WhatsApp. You're away, but never out of the loop.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="why" style="background:var(--cream-2);">
+<!-- WHY PETSAMA: ACADEMY & VALUES -->
+<section class="why-section" id="why">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Why Petsama</div>
-      <h2>Pet care that actually fits your life</h2>
-      <p>Flexible visits, real people, and a sitter your pet will genuinely be happy to see.</p>
+    <div class="section-title-wrap">
+      <div class="eyebrow" style="background:var(--gold)">Why we are Elite</div>
+      <h2>No boarding cages. Just sheer respect.</h2>
+      <p>We treat pet care as a premium service. Our academy sitters respect your pet's agency and comfort.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>Verified, always</h3>
-        <p>ID and background checks before any sitter enters your home.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div>
+          <div class="inner-visual">
+            <img src="6.jpg" alt="Smart reading dog">
+          </div>
+          <h3>Sitter Academics</h3>
+          <p>Every single sitter passes background verification and our basic pet psychology and routine management check.</p>
+        </div>
       </div>
-      <div class="feature">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>Morning & evening visits</h3>
-        <p>Hourly drop-ins or full overnight stays — whatever your pet needs.</p>
+      <div class="why-card">
+        <div>
+          <div class="inner-visual">
+            <img src="2.jpg" alt="Dog with headphones">
+          </div>
+          <h3>Routine Matching</h3>
+          <p>We don't mess with perfection. Morning walks, evening jazz, exact food-bowl locations—it all stays identical.</p>
+        </div>
       </div>
-      <div class="feature">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1E1710" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
-        <h3>No boarding cages</h3>
-        <p>Your pet stays in their own space, on their own routine.</p>
+      <div class="why-card">
+        <div>
+          <div class="inner-visual">
+            <img src="dae7d6ab8e2abd3e74d776a5fd49a6cb.jpg" alt="Dog smiling with cap">
+          </div>
+          <h3>100% Home Comfort</h3>
+          <p>No trauma from other loud barking dogs or hostile spaces. They rule their own living rooms.</p>
+        </div>
       </div>
-      <div class="feature">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2"><path d="M4 20l4-4M4 20V4h16v10H10z"/></svg></div>
-        <h3>Photo updates</h3>
-        <p>A snap or a video after every single visit, straight to your phone.</p>
+      <div class="why-card">
+        <div>
+          <div class="inner-visual">
+            <img src="55c267203b80bce71e78984398f0e0be.jpg" alt="Boss cat with sunglasses">
+          </div>
+          <h3>Unbothered Luxury</h3>
+          <p>We treat your pets like royalty. Hand-fed meals, tailored playtimes, and absolute peace of mind.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section gallery-section" id="vibe">
+<!-- TESTIMONIALS SECTION -->
+<section class="reviews-section">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Happy tails</div>
-      <h2>The good vibes only zone</h2>
-      <p>This is basically what our group chat looks like after every visit.</p>
+    <div class="section-title-wrap">
+      <div class="eyebrow" style="background:var(--sakura); color:var(--ink);">Real Customer Love</div>
+      <h2>Approved by Bengaluru's Finest Critics</h2>
+      <p>We sit for some extremely demanding characters. Here is what their parents have to say.</p>
     </div>
-    <div class="gallery-grid">
-      <div class="gcard">
-        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="110" cy="115" r="80" fill="#FFC93C" stroke="#1E1710" stroke-width="4"/>
-          <path d="M60 60 Q50 30 70 20 Q60 45 75 55Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <path d="M85 45 Q80 15 102 10 Q90 35 100 48Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <path d="M115 42 Q118 12 140 12 Q125 32 130 48Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <path d="M145 50 Q155 22 178 25 Q158 42 160 58Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <circle cx="65" cy="30" r="6" fill="#C1272D"/><circle cx="98" cy="18" r="6" fill="#C1272D"/><circle cx="130" cy="18" r="6" fill="#C1272D"/><circle cx="165" cy="30" r="6" fill="#C1272D"/>
-          <ellipse cx="55" cy="105" rx="16" ry="24" fill="#FFC93C" stroke="#1E1710" stroke-width="4"/>
-          <ellipse cx="165" cy="105" rx="16" ry="24" fill="#FFC93C" stroke="#1E1710" stroke-width="4"/>
-          <ellipse cx="110" cy="155" rx="55" ry="38" fill="#FFF6E5" stroke="#1E1710" stroke-width="4"/>
-          <circle cx="90" cy="115" r="7" fill="#1E1710"/><circle cx="130" cy="115" r="7" fill="#1E1710"/>
-          <ellipse cx="110" cy="140" rx="10" ry="7" fill="#1E1710"/>
-          <path d="M92 150 Q110 165 128 150" stroke="#1E1710" stroke-width="4" fill="none" stroke-linecap="round"/>
-        </svg>
-        <p>"Best belly rub delivery service in HSR." 🐶</p>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div>
+          <p class="review-quote">"Normally hates absolutely everyone. I was terrified of leaving him, but Priya matched his exact vibe within 5 minutes. Best sitting agency in HSR."</p>
+        </div>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="452ba041686f80d295e4f410c21176d1.jpg" alt="Squinting dog">
+          </div>
+          <div class="author-info">
+            <h4>Buster & Rahul</h4>
+            <span>Indiranagar</span>
+          </div>
+        </div>
       </div>
-      <div class="gcard">
-        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="110" cy="115" r="80" fill="#4FB6E8" stroke="#1E1710" stroke-width="4"/>
-          <path d="M50 55 Q40 25 60 15 Q52 40 65 50Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <path d="M170 55 Q180 25 160 15 Q168 40 155 50Z" fill="#F6C9D3" stroke="#1E1710" stroke-width="2.5"/>
-          <circle cx="55" cy="28" r="6" fill="#C1272D"/><circle cx="165" cy="28" r="6" fill="#C1272D"/>
-          <path d="M55 75 L20 65 M55 85 L18 88" stroke="#1E1710" stroke-width="3" stroke-linecap="round"/>
-          <path d="M165 75 L200 65 M165 85 L202 88" stroke="#1E1710" stroke-width="3" stroke-linecap="round"/>
-          <path d="M62 90 L45 45 L90 78Z" fill="#FFF6E5" stroke="#1E1710" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M158 90 L175 45 L130 78Z" fill="#FFF6E5" stroke="#1E1710" stroke-width="4" stroke-linejoin="round"/>
-          <circle cx="110" cy="125" r="65" fill="#FFF6E5" stroke="#1E1710" stroke-width="4"/>
-          <circle cx="88" cy="115" r="6" fill="#1E1710"/><circle cx="132" cy="115" r="6" fill="#1E1710"/>
-          <path d="M100 128 L120 128 L110 138Z" fill="#1E1710"/>
-          <path d="M110 138 Q108 148 92 145 M110 138 Q112 148 128 145" stroke="#1E1710" stroke-width="3" fill="none" stroke-linecap="round"/>
-        </svg>
-        <p>"Napped through the whole visit. Perfect." 🐱</p>
+
+      <div class="review-card">
+        <div>
+          <p class="review-quote">"I am extremely picky. I need to know her schedules down to the minute. Petsama's WhatsApp logs are so thorough and funny, I worry she likes her sitter more than me."</p>
+        </div>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="4.jpg" alt="Sassy Dachshund">
+          </div>
+          <div class="author-info">
+            <h4>Coco & Sneha</h4>
+            <span>Koramangala</span>
+          </div>
+        </div>
       </div>
-      <div class="gcard">
-        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="20" width="180" height="180" rx="28" fill="#C1272D" stroke="#1E1710" stroke-width="4"/>
-          <g fill="#FBF1E4">
-            <circle cx="70" cy="80" r="10"/><circle cx="60" cy="60" r="5"/><circle cx="80" cy="60" r="5"/><circle cx="60" cy="97" r="5"/><circle cx="80" cy="97" r="5"/>
-            <circle cx="150" cy="130" r="10"/><circle cx="140" cy="110" r="5"/><circle cx="160" cy="110" r="5"/><circle cx="140" cy="147" r="5"/><circle cx="160" cy="147" r="5"/>
-            <circle cx="105" cy="160" r="8"/><circle cx="97" cy="145" r="4"/><circle cx="113" cy="145" r="4"/><circle cx="97" cy="175" r="4"/><circle cx="113" cy="175" r="4"/>
-          </g>
-          <text x="110" y="45" text-anchor="middle" font-family="Poppins" font-weight="800" font-size="16" fill="#FBF1E4">TAILS UP</text>
-        </svg>
-        <p>"Every visit, wagging tails and zero worries." 🐾</p>
+
+      <div class="review-card">
+        <div>
+          <p class="review-quote">"Excellent service. Pure zen vibes. The booking was confirmed within 2 hours, and we got beautiful photo logs every single evening. Highly recommended."</p>
+        </div>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="99de2dda788780b19d1f8f605bfb577a.jpg" alt="Silly happy cat">
+          </div>
+          <div class="author-info">
+            <h4>Luna & Vikram</h4>
+            <span>Whitefield</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CALL TO ACTION -->
 <section class="cta-section">
-  <div class="blob" style="width:380px;height:380px;top:-100px;left:-100px;"></div>
-  <div class="blob" style="width:280px;height:280px;bottom:-70px;right:-60px;"></div>
   <div class="cta-inner">
-    <h2>Ready when you are 🐾</h2>
-    <p>Fill a quick form or just drop us a text — either way, we've got your pet covered.</p>
+    <h2>Give them the absolute best 🐾</h2>
+    <p>We are ready when you are. Drop us a quick form or directly ping our concierge on WhatsApp to schedule your sitter meet-and-greet.</p>
     <div class="cta-btns">
-      <a href="book.html" class="btn ghost">Fill the form</a>
-      <a href="https://wa.me/8429272310" target="_blank" class="btn wa">💬 WhatsApp us</a>
+      <a href="book.html" class="btn secondary">Fill Booking Form</a>
+      <a href="https://wa.me/918429272310" target="_blank" class="btn wa">💬 Chat on WhatsApp</a>
     </div>
-    <p style="margin-top:18px;"><a href="pricing.html" style="color:#fff;text-decoration:underline;font-weight:600;font-size:14px;">See our full pricing →</a></p>
+    <p style="margin-top: 24px;"><a href="pricing.html" style="color:#FFF1F2; text-decoration:underline; font-weight:700;">Explore our Pricing Tiers →</a></p>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="assets/petsama-logo.png" alt="Petsama logo"></a>
-    <p>Petsama · Bengaluru · WhatsApp 84292 72310</p>
-    <p>Stay. Play. Be Loved. 🐾</p>
+    <a href="index.html" class="brand">
+      <img src="assets/petsama-logo.png" alt="Petsama logo">
+    </a>
+    <p>© Petsama Bengaluru · Elite Home Sitting Services</p>
+    <p style="font-size:12px; opacity:0.7;">Stay. Play. Be Loved. 🐾</p>
   </div>
 </footer>
+
+<script>
+  // Simple Premium Interaction Script for Mood Selector
+  const moodData = {
+    drama: {
+      img: "6bf3750e15149ecb2f2d367a92f3a2c6.jpg",
+      caption: "💅 'Sigh... when will they return from the office?'",
+      title: "The Melodramatic Sinner",
+      desc: "Some pets react to your absence like stars in a tragic silent film. They stare out the window with existential angst. In boarding facilities, this isolation morphs into outright trauma. At Petsama, our sitters engage them with distraction play, soft talk, and familiar comforts to make sure they remain peaceful.",
+      highlight: "How we solve this: Extra soft cuddles, therapeutic massage, and keeping their routine untouched."
+    },
+    fight: {
+      img: "1.jpg",
+      caption: "🥊 'Wanna fight? Huh? Try coming to my house!'",
+      title: "The Defensive Warrior",
+      desc: "For pets with highly protective instincts, boarding houses with unfamiliar dogs trigger intense defensiveness. They spend all day on high alert. Within their own walls, however, they feel secure. Our elite sitters know how to calmly establish friendship without invading their boundaries, redirecting territorial energy into puzzle toys.",
+      highlight: "How we solve this: Experienced sitters trained in boundary management and reactive pet psychology."
+    },
+    royal: {
+      img: "5bd5719eb61a7c4305d56f7eaa9c7054.jpg",
+      caption: "👑 'Please do not disturb my vacation schedule.'",
+      title: "The Spoiled Aristocrat",
+      desc: "These pets do not miss you. They simply miss their staff. When you go on vacation, they expect their routine to be handled perfectly. Our elite sitters take care of everything: specific gourmet feeding schedules, afternoon walks in the exact right park, and premium living room couch lounging.",
+      highlight: "How we solve this: Bespoke 1-on-1 devotion, gourmet feeding, and favorite playlist playback."
+    }
+  };
+
+  function switchMood(moodKey) {
+    // Update active tab styling
+    const tabs = document.querySelectorAll('.mood-tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Find clicked tab based on text
+    event.target.classList.add('active');
+
+    // Smoothly transition content
+    const img = document.getElementById('mood-img');
+    const caption = document.getElementById('mood-caption');
+    const title = document.getElementById('mood-title');
+    const desc = document.getElementById('mood-desc');
+    const highlight = document.getElementById('mood-highlight');
+    const card = document.getElementById('mood-card');
+
+    card.style.opacity = 0.3;
+    card.style.transform = "translateY(5px)";
+
+    setTimeout(() => {
+      img.src = moodData[moodKey].img;
+      caption.textContent = moodData[moodKey].caption;
+      title.textContent = moodData[moodKey].title;
+      desc.textContent = moodData[moodKey].desc;
+      highlight.textContent = moodData[moodKey].highlight;
+      
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }, 150);
+  }
+</script>
 
 </body>
 </html>
